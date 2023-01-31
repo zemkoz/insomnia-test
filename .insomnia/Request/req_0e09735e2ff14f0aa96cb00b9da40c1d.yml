@@ -1,0 +1,30 @@
+_id: req_0e09735e2ff14f0aa96cb00b9da40c1d
+type: Request
+parentId: fld_36c74cb21da1454f9b233906e7ae70b4
+modified: 1675095272513
+created: 1675092604842
+url: "{{ _.apiV2_base_url }}/UKHDB2CSite/orders/0000009217"
+name: Get Orders
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_52bd9fb489e742e1a13a19c6d861ddac
+    name: Accept
+    value: "*/*"
+    description: ""
+authentication:
+  type: oauth2
+  grantType: client_credentials
+  accessTokenUrl: "{{ _.oauth2.access_token_url }}"
+  clientSecret: "{{ _.oauth2.client_secret }}"
+  clientId: "{{ _.oauth2.client_id }}"
+metaSortKey: -1675092604842
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

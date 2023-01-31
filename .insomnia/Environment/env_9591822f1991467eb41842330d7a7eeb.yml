@@ -1,0 +1,29 @@
+_id: env_9591822f1991467eb41842330d7a7eeb
+type: Environment
+parentId: env_12d5ad62b42edffd4c9538ec37f1ac59197d10a5
+modified: 1675095227443
+created: 1675092797639
+name: PIM UAT
+data:
+  scheme: https
+  base_url: "{{ _.scheme }}://{{ _.host }}"
+  apiV2_base_url: "{{ _.base_url }}/phpimcommercewebservices/v2"
+  host: uat-pim.hrt.cloud
+  oauth2:
+    access_token_url: "{{ _.base_url }}/authorizationserver/oauth/token"
+    client_id: PH_OCC_CLIENT
+    client_secret: 5zEVUk
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_url
+    - apiV2_base_url
+    - host
+    - oauth2
+  "&~|oauth2":
+    - access_token_url
+    - client_id
+    - client_secret
+color: "#028000"
+isPrivate: false
+metaSortKey: 1675092797639
